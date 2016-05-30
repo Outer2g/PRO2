@@ -1,0 +1,154 @@
+\hypertarget{class_ranking}{\section{Referencia de la Clase Ranking}
+\label{class_ranking}\index{Ranking@{Ranking}}
+}
+
+
+contiene el ranking del conjunto de organismos  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ranking_af700e3f1e24eb35173adff4fbcac7c68}{Ranking} (int M)
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_ranking_aa350c65acea82ec0ac42ec80db8bc00f}{$\sim$\-Ranking} ()
+\item 
+void \hyperlink{class_ranking_a7265b27c9413acc7db65b9e815f3be64}{nuevo\-\_\-hijo} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em añade un nuevo hijo a un organismo, también se especifica quien ha sido la pareja y quien ha sido el hijo \end{DoxyCompactList}\item 
+void \hyperlink{class_ranking_acf63187d3222d4f23c0828a4fb9f7c7b}{actualizar} ()
+\begin{DoxyCompactList}\small\item\em realiza la actualización del ranking \end{DoxyCompactList}\item 
+void \hyperlink{class_ranking_afa2e8a90b29c55dafbbede7db8ac4ad8}{nuevo\-\_\-organismo} ()
+\begin{DoxyCompactList}\small\item\em añade un nuevo organismo al ranking \end{DoxyCompactList}\item 
+void \hyperlink{class_ranking_a07bc54ad0b298fcfb9e989294306394b}{escribir\-\_\-rank} ()
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\item 
+void \hyperlink{class_ranking_acc9b5a82a1c185e90bc654a01a406f31}{escribir\-\_\-rank\-\_\-rep} ()
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+contiene el ranking del conjunto de organismos 
+
+Definición en la línea 13 del archivo Ranking.\-hpp.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_ranking_af700e3f1e24eb35173adff4fbcac7c68}{\index{Ranking@{Ranking}!Ranking@{Ranking}}
+\index{Ranking@{Ranking}!Ranking@{Ranking}}
+\subsubsection[{Ranking}]{\setlength{\rightskip}{0pt plus 5cm}Ranking\-::\-Ranking (
+\begin{DoxyParamCaption}
+\item[{int}]{M}
+\end{DoxyParamCaption}
+)}}\label{class_ranking_af700e3f1e24eb35173adff4fbcac7c68}
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar una lavadora. \begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un vector con M posiciones vacío 
+\end{DoxyPostcond}
+\hypertarget{class_ranking_aa350c65acea82ec0ac42ec80db8bc00f}{\index{Ranking@{Ranking}!$\sim$\-Ranking@{$\sim$\-Ranking}}
+\index{$\sim$\-Ranking@{$\sim$\-Ranking}!Ranking@{Ranking}}
+\subsubsection[{$\sim$\-Ranking}]{\setlength{\rightskip}{0pt plus 5cm}Ranking\-::$\sim$\-Ranking (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ranking_aa350c65acea82ec0ac42ec80db8bc00f}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_ranking_a7265b27c9413acc7db65b9e815f3be64}{\index{Ranking@{Ranking}!nuevo\-\_\-hijo@{nuevo\-\_\-hijo}}
+\index{nuevo\-\_\-hijo@{nuevo\-\_\-hijo}!Ranking@{Ranking}}
+\subsubsection[{nuevo\-\_\-hijo}]{\setlength{\rightskip}{0pt plus 5cm}void Ranking\-::nuevo\-\_\-hijo (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{z}
+\end{DoxyParamCaption}
+)}}\label{class_ranking_a7265b27c9413acc7db65b9e815f3be64}
+
+
+añade un nuevo hijo a un organismo, también se especifica quien ha sido la pareja y quien ha sido el hijo 
+
+\begin{DoxyPrecond}{Precondición}
+el organismo existe. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+se ha añadido al organismo el hijo y la pareja. También se ha incrementado el número de hijos de dicho organismo 
+\end{DoxyPostcond}
+\hypertarget{class_ranking_acf63187d3222d4f23c0828a4fb9f7c7b}{\index{Ranking@{Ranking}!actualizar@{actualizar}}
+\index{actualizar@{actualizar}!Ranking@{Ranking}}
+\subsubsection[{actualizar}]{\setlength{\rightskip}{0pt plus 5cm}void Ranking\-::actualizar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ranking_acf63187d3222d4f23c0828a4fb9f7c7b}
+
+
+realiza la actualización del ranking 
+
+\begin{DoxyPrecond}{Precondición}
+el ranking no está vacío 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+el parámetro implícito está ordenado decrecientemente por numero de hijos producidos, en caso de empate por orden decreciente de identificadores de organismo 
+\end{DoxyPostcond}
+\hypertarget{class_ranking_afa2e8a90b29c55dafbbede7db8ac4ad8}{\index{Ranking@{Ranking}!nuevo\-\_\-organismo@{nuevo\-\_\-organismo}}
+\index{nuevo\-\_\-organismo@{nuevo\-\_\-organismo}!Ranking@{Ranking}}
+\subsubsection[{nuevo\-\_\-organismo}]{\setlength{\rightskip}{0pt plus 5cm}void Ranking\-::nuevo\-\_\-organismo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ranking_afa2e8a90b29c55dafbbede7db8ac4ad8}
+
+
+añade un nuevo organismo al ranking 
+
+\begin{DoxyPrecond}{Precondición}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+se ha añadido un nuevo organismo en la posición n+1, i se ha actualizado n 
+\end{DoxyPostcond}
+\hypertarget{class_ranking_a07bc54ad0b298fcfb9e989294306394b}{\index{Ranking@{Ranking}!escribir\-\_\-rank@{escribir\-\_\-rank}}
+\index{escribir\-\_\-rank@{escribir\-\_\-rank}!Ranking@{Ranking}}
+\subsubsection[{escribir\-\_\-rank}]{\setlength{\rightskip}{0pt plus 5cm}void Ranking\-::escribir\-\_\-rank (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ranking_a07bc54ad0b298fcfb9e989294306394b}
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha escrito el ranking actual en el canal de salida estandar 
+\end{DoxyPostcond}
+\hypertarget{class_ranking_acc9b5a82a1c185e90bc654a01a406f31}{\index{Ranking@{Ranking}!escribir\-\_\-rank\-\_\-rep@{escribir\-\_\-rank\-\_\-rep}}
+\index{escribir\-\_\-rank\-\_\-rep@{escribir\-\_\-rank\-\_\-rep}!Ranking@{Ranking}}
+\subsubsection[{escribir\-\_\-rank\-\_\-rep}]{\setlength{\rightskip}{0pt plus 5cm}void Ranking\-::escribir\-\_\-rank\-\_\-rep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ranking_acc9b5a82a1c185e90bc654a01a406f31}
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha escrito el ranking de reproducciones en el canal de salida estandar 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ranking_8hpp}{Ranking.\-hpp}\end{DoxyCompactItemize}

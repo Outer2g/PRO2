@@ -1,0 +1,90 @@
+\hypertarget{_programa_8cpp}{\section{Referencia del Archivo Programa.\-cpp}
+\label{_programa_8cpp}\index{Programa.\-cpp@{Programa.\-cpp}}
+}
+
+
+Programa principal.  
+
+
+Dependencia gráfica adjunta para Programa.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{_programa_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_programa_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em programa main \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Programa principal. 
+
+Definición en el archivo \hyperlink{_programa_8cpp_source}{Programa.\-cpp}.
+
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{_programa_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{Programa.\-cpp@{Programa.\-cpp}!main@{main}}
+\index{main@{main}!Programa.cpp@{Programa.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_programa_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+programa main 
+
+Si x=1, aplica una ronda de estiron a una secuencia de identificadores
+
+Si x=2, aplica una ronda de recorte a una secuencia de identificadores, si despues de la ronda mueren todos los organismos, el booleano finish pasa a ser true
+
+Si x=3, aplica una ronda de reproducción a todos los organismos, si llega a la población máxima
+
+Si x=4, escribe el ranking de reproducción de los organismos
+
+Si x=5, consulta el subconjunto de organismos con id= a la secuencia de entrada
+
+Definición en la línea 18 del archivo Programa.\-cpp.
+
+
+\begin{DoxyCode}
+          \{
+    \textcolor{keywordtype}{int} n=readint();
+    \textcolor{keywordtype}{int} M=readint();
+    \hyperlink{class_cjt__organismes}{Cjt\_organismes} orgs;
+    orgs.\hyperlink{class_cjt__organismes_ad68c53287bf354d7dc5efd78266b76fc}{leer\_cjt}(n,M);
+    \textcolor{keywordtype}{int} x=readint();
+    \textcolor{keywordflow}{while} (x != -1)\{
+        \textcolor{keywordtype}{bool} finish;
+
+        \textcolor{keywordflow}{if} (x == 1)\{
+            orgs.\hyperlink{class_cjt__organismes_a32f1d55b2e11f6f724e22f305712d3a1}{estiron\_id}();
+        \}
+
+        \textcolor{keywordflow}{if} (x == 2)\{
+            \textcolor{keywordflow}{if} (orgs.\hyperlink{class_cjt__organismes_a33b52c7d797c0ee244e3c77cb4d2b86e}{recorte\_id}())\{
+                finish=\textcolor{keyword}{true};
+            \}
+        \}
+
+        \textcolor{keywordflow}{if} (x == 3)\{
+            \textcolor{keywordflow}{if}(orgs.round())finish=\textcolor{keyword}{true};
+        \}
+        \textcolor{keywordflow}{if} (x == 4)\{
+            orgs.\hyperlink{class_cjt__organismes_a92aaf8ea473cf2c96691dc729d953baa}{consult\_ranking\_rep}();
+        \}
+        \textcolor{keywordflow}{if} (x == 5)\{
+            orgs.\hyperlink{class_cjt__organismes_a0c8bed8ae75e0d8ff377be4ca1ee05bc}{consult\_id}();
+        \}
+        \textcolor{keywordflow}{if}(finish) x=-1;
+        \textcolor{keywordflow}{else} x=readint();
+    \}
+    \textcolor{keywordflow}{if} (not finish) cout << \textcolor{stringliteral}{"Se ha finalizado manualmente"}<< endl;
+\}
+\end{DoxyCode}

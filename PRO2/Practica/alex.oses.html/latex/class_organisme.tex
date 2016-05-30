@@ -1,0 +1,190 @@
+\hypertarget{class_organisme}{\section{Referencia de la Clase Organisme}
+\label{class_organisme}\index{Organisme@{Organisme}}
+}
+
+
+Contiene celulas ordenadas.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_organisme_a86e18d319ceca9bb5fd43ac630c78b40}{Organisme} (int x)
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_organisme_a55c9d7cbc9683970ad88455fdc3be7aa}{$\sim$\-Organisme} ()
+\item 
+\hyperlink{class_organisme}{Organisme} \hyperlink{class_organisme_a589195c1a83c096fcd7487a8b9a8a0a7}{reproduccion\-\_\-org} (const \hyperlink{class_organisme}{Organisme} \&o)
+\begin{DoxyCompactList}\small\item\em realiza la reproduccion entre el parámetro implícito y otro organismo \end{DoxyCompactList}\item 
+void \hyperlink{class_organisme_acdc2be53a7fabf324235c19b313bf662}{estiron} ()
+\begin{DoxyCompactList}\small\item\em realiza un estiron en el parámetro implícito \end{DoxyCompactList}\item 
+bool \hyperlink{class_organisme_a1f97e234776174573cfb761e7697dc37}{recorte} ()
+\begin{DoxyCompactList}\small\item\em realiza un recorte \end{DoxyCompactList}\item 
+bool \hyperlink{class_organisme_a6428a0fc8326f50acbdf24f6a134e60b}{muerto} ()
+\begin{DoxyCompactList}\small\item\em Consultora de estado. \end{DoxyCompactList}\item 
+bool \hyperlink{class_organisme_a22b9c9694a3ffcb42314f29dd56a43a5}{estirable} ()
+\begin{DoxyCompactList}\small\item\em Consultora de flexibilidad. \end{DoxyCompactList}\item 
+void \hyperlink{class_organisme_aa8ef449b54a88d0073f9a5343e5a8441}{leer\-\_\-organismo} ()
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
+void \hyperlink{class_organisme_a5c72bf91508e29c1135b24e1d61bb335}{escriure\-\_\-organismo} ()
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Contiene celulas ordenadas. 
+
+Definición en la línea 14 del archivo Organisme.\-hpp.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_organisme_a86e18d319ceca9bb5fd43ac630c78b40}{\index{Organisme@{Organisme}!Organisme@{Organisme}}
+\index{Organisme@{Organisme}!Organisme@{Organisme}}
+\subsubsection[{Organisme}]{\setlength{\rightskip}{0pt plus 5cm}Organisme\-::\-Organisme (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{class_organisme_a86e18d319ceca9bb5fd43ac630c78b40}
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar una cubeta. \begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un organismo con I\-D=x muerto 
+\end{DoxyPostcond}
+\hypertarget{class_organisme_a55c9d7cbc9683970ad88455fdc3be7aa}{\index{Organisme@{Organisme}!$\sim$\-Organisme@{$\sim$\-Organisme}}
+\index{$\sim$\-Organisme@{$\sim$\-Organisme}!Organisme@{Organisme}}
+\subsubsection[{$\sim$\-Organisme}]{\setlength{\rightskip}{0pt plus 5cm}Organisme\-::$\sim$\-Organisme (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_organisme_a55c9d7cbc9683970ad88455fdc3be7aa}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_organisme_a589195c1a83c096fcd7487a8b9a8a0a7}{\index{Organisme@{Organisme}!reproduccion\-\_\-org@{reproduccion\-\_\-org}}
+\index{reproduccion\-\_\-org@{reproduccion\-\_\-org}!Organisme@{Organisme}}
+\subsubsection[{reproduccion\-\_\-org}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Organisme} Organisme\-::reproduccion\-\_\-org (
+\begin{DoxyParamCaption}
+\item[{const {\bf Organisme} \&}]{o}
+\end{DoxyParamCaption}
+)}}\label{class_organisme_a589195c1a83c096fcd7487a8b9a8a0a7}
+
+
+realiza la reproduccion entre el parámetro implícito y otro organismo 
+
+\begin{DoxyPrecond}{Precondición}
+el organismo del parámetro implícito y o són compatibles, Cjt\-\_\-organismes.\-size()$<$M 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Crea un organismo con id=numero organismos+1 formado por la intersección de ambos más las celulas activas y actualiza numero organismos 
+\end{DoxyPostcond}
+\hypertarget{class_organisme_acdc2be53a7fabf324235c19b313bf662}{\index{Organisme@{Organisme}!estiron@{estiron}}
+\index{estiron@{estiron}!Organisme@{Organisme}}
+\subsubsection[{estiron}]{\setlength{\rightskip}{0pt plus 5cm}void Organisme\-::estiron (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_organisme_acdc2be53a7fabf324235c19b313bf662}
+
+
+realiza un estiron en el parámetro implícito 
+
+\begin{DoxyPrecond}{Precondición}
+el parámetro implícito es estirable 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a ser el mismo, más la fisión de sus celulas sin hijos. 
+\end{DoxyPostcond}
+\hypertarget{class_organisme_a1f97e234776174573cfb761e7697dc37}{\index{Organisme@{Organisme}!recorte@{recorte}}
+\index{recorte@{recorte}!Organisme@{Organisme}}
+\subsubsection[{recorte}]{\setlength{\rightskip}{0pt plus 5cm}bool Organisme\-::recorte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_organisme_a1f97e234776174573cfb761e7697dc37}
+
+
+realiza un recorte 
+
+\begin{DoxyPrecond}{Precondición}
+El parámetro implícito no está muerto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a ser el mismo, menos las celulas sin hijos, devuelve true si el organismo ha muerto, false si sigue vivo 
+\end{DoxyPostcond}
+\hypertarget{class_organisme_a6428a0fc8326f50acbdf24f6a134e60b}{\index{Organisme@{Organisme}!muerto@{muerto}}
+\index{muerto@{muerto}!Organisme@{Organisme}}
+\subsubsection[{muerto}]{\setlength{\rightskip}{0pt plus 5cm}bool Organisme\-::muerto (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_organisme_a6428a0fc8326f50acbdf24f6a134e60b}
+
+
+Consultora de estado. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es cierto si el organismo ha perdido la celula madre, falso si no la ha perdido 
+\end{DoxyPostcond}
+\hypertarget{class_organisme_a22b9c9694a3ffcb42314f29dd56a43a5}{\index{Organisme@{Organisme}!estirable@{estirable}}
+\index{estirable@{estirable}!Organisme@{Organisme}}
+\subsubsection[{estirable}]{\setlength{\rightskip}{0pt plus 5cm}bool Organisme\-::estirable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_organisme_a22b9c9694a3ffcb42314f29dd56a43a5}
+
+
+Consultora de flexibilidad. 
+
+\begin{DoxyPrecond}{Precondición}
+el parámetro implícito no está muerto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es cierto si hay celulas fisionables, falso si no 
+\end{DoxyPostcond}
+\hypertarget{class_organisme_aa8ef449b54a88d0073f9a5343e5a8441}{\index{Organisme@{Organisme}!leer\-\_\-organismo@{leer\-\_\-organismo}}
+\index{leer\-\_\-organismo@{leer\-\_\-organismo}!Organisme@{Organisme}}
+\subsubsection[{leer\-\_\-organismo}]{\setlength{\rightskip}{0pt plus 5cm}void Organisme\-::leer\-\_\-organismo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_organisme_aa8ef449b54a88d0073f9a5343e5a8441}
+
+
+Operación de lectura. 
+
+\begin{DoxyPrecond}{Precondición}
+el organismo tiene almenos una celula 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+el parámetro implícito pasa a tener el organismo descrito en el canal de entrada 
+\end{DoxyPostcond}
+\hypertarget{class_organisme_a5c72bf91508e29c1135b24e1d61bb335}{\index{Organisme@{Organisme}!escriure\-\_\-organismo@{escriure\-\_\-organismo}}
+\index{escriure\-\_\-organismo@{escriure\-\_\-organismo}!Organisme@{Organisme}}
+\subsubsection[{escriure\-\_\-organismo}]{\setlength{\rightskip}{0pt plus 5cm}void Organisme\-::escriure\-\_\-organismo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_organisme_a5c72bf91508e29c1135b24e1d61bb335}
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Escribe el contenido del parámetro implícito por el canal estándar de salida 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_organisme_8hpp}{Organisme.\-hpp}\end{DoxyCompactItemize}

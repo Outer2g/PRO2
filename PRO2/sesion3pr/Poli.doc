@@ -1,0 +1,72 @@
+class Poli {
+
+// Tipo de módulo: datos
+// Representa polinomios de una variable de coeficientes enteros y grado acotado
+
+private:
+
+public:
+
+  /* Constructoras */
+
+  Poli();
+  /* cierto */
+  /* el resultado es el polinomio cero */
+  
+  Poli(int c, int i);
+  /* Pre: i está entre 0 y el grado máximo permitido */
+  /* Post: el resultado es cx^i */
+
+  Poli(const Poli& p);
+  /* Pre: cierto */
+  /* Post: el resultado es una copia de p */
+
+  /* Destructora por defecto */
+  ~Poli();
+
+  /* Redefinición de la asignación */
+
+  Poli& operator=(const Poli& p);
+  /* Pre: cierto */
+  /* Post: el resultado es una copia de p */
+
+  /* Modificadoras de los campos */
+
+  void modif_coef(int c, int i);
+  /* Pre: i está entre 0 y el grado máximo permitido */
+  /* Post: el parametro implicito cambia su término i-esimo a cx^i */
+
+  void suma_poli(const Poli& p);
+  /* Pre: cierto */
+  /* Post: el parametro implicito pasa a ser la suma de su valor original y p */
+
+  /* Consultoras de los campos */
+
+  static int grado_maximo();
+  /* Pre: cierto */
+  /* Post: el resultado es el grado máximo permitido */  
+
+  int grado() const;
+  /* Pre: cierto */
+  /* Post: el resultado es el grado del parámetro implícito */  
+
+  int coef(int i) const;
+  /* Pre: i está entre 0 y el grado del parámetro implícito */
+  /* Post: el resultado es el coeficiente i-esimo del parametro implicito */
+
+
+  /* Entrada / Salida */
+
+  void leer_poli(int i);
+  /* Pre: está preparada en el canal standard de entrada una secuencia de enteros
+     marcada por i */
+  /* Post: el parámetro implícito pasa a ser un polinomio leído del canal standard
+     de entrada, cuyos coeficientes, de menor a mayor índice, son los valores 
+     leídos, salvo i.  Si se leen demasiados coeficientes se lanza una excepcion, 
+     incluso si son ceros */
+
+  void escribir_poli() const;
+  /* Pre: cierto */
+  /* Post: se han escrito los coeficientes del parámetro implícito en el canal
+     standard de salida, en orden de menor a mayor índice */
+};

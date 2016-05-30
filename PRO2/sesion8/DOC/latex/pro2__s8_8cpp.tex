@@ -1,0 +1,92 @@
+\hypertarget{pro2__s8_8cpp}{\section{Referencia del Archivo pro2\-\_\-s8.\-cpp}
+\label{pro2__s8_8cpp}\index{pro2\-\_\-s8.\-cpp@{pro2\-\_\-s8.\-cpp}}
+}
+Dependencia gráfica adjunta para pro2\-\_\-s8.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{pro2__s8_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{pro2__s8_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Programa principal para el ejercicio {\itshape Gestión de una lavadora}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{pro2__s8_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{pro2\-\_\-s8.\-cpp@{pro2\-\_\-s8.\-cpp}!main@{main}}
+\index{main@{main}!pro2_s8.cpp@{pro2\-\_\-s8.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{pro2__s8_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Programa principal para el ejercicio {\itshape Gestión de una lavadora}. 
+
+
+
+Definición en la línea 20 del archivo pro2\-\_\-s8.\-cpp.
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{class_lavadora}{Lavadora} Lav;
+    \hyperlink{class_cubeta}{Cubeta} Cubet;
+    \textcolor{keywordtype}{int} x=readint();
+    \textcolor{keywordflow}{while} (x != -8)\{
+        \textcolor{keywordflow}{if} (x == -1)\{
+            cout << \textcolor{stringliteral}{"peso: "};
+            \textcolor{keywordtype}{int} peso=readint();
+            cout << endl << \textcolor{stringliteral}{"color: B blanco, Otro Color: "};
+            \textcolor{keywordtype}{char} color=readchar();
+            cout << endl;
+            \textcolor{keywordtype}{bool} p=\textcolor{keyword}{true};
+            \textcolor{keywordflow}{if} (color==\textcolor{charliteral}{'B'}) p=\textcolor{keyword}{false};
+            Lav.\hyperlink{class_lavadora_ad43871786bb680e22552103bc23adc71}{inicializar\_lavadora}(peso,p);
+            cout << \textcolor{stringliteral}{"lavadora inicializada"} << endl;
+        \}
+        \textcolor{keywordflow}{if} (x == -2)\{
+            cout << \textcolor{stringliteral}{"peso: "};
+            \textcolor{keywordtype}{int} peso=readint();
+            cout << endl << \textcolor{stringliteral}{"color: B blanco, Otro Color: "};
+            \textcolor{keywordtype}{char} color=readchar();
+            cout << endl;
+            \textcolor{keywordtype}{bool} p=\textcolor{keyword}{true};
+            \textcolor{keywordflow}{if} (color==\textcolor{charliteral}{'B'}) p=\textcolor{keyword}{false};
+            \hyperlink{class_prenda}{Prenda} Prend(peso,p);
+            Lav.\hyperlink{class_lavadora_a7e465e1f11ba5ba3cffcee1ce9507e79}{anadir\_prenda}(Prend);
+        \}
+        \textcolor{keywordflow}{if} (x == -3)\{
+            cout << \textcolor{stringliteral}{"peso: "};
+            \textcolor{keywordtype}{int} peso=readint();
+            cout << endl << \textcolor{stringliteral}{"color: B blanco, Otro Color: "};
+            \textcolor{keywordtype}{char} color=readchar();
+            cout << endl;
+            \textcolor{keywordtype}{bool} p=\textcolor{keyword}{true};
+            \textcolor{keywordflow}{if} (color==\textcolor{charliteral}{'B'}) p=\textcolor{keyword}{false};
+            \hyperlink{class_prenda}{Prenda} Prend(peso,p);
+            Cubet.\hyperlink{class_cubeta_a431873df8f99cebe56b4787a5271e395}{anadir\_prenda}(Prend);
+        \}
+        \textcolor{keywordflow}{if} (x == -4)\{
+            Cubet.\hyperlink{class_cubeta_a3586257f2f2eacefc47714c6a3a01875}{completar\_lavadora}(Lav);
+        \}
+        \textcolor{keywordflow}{if} (x == -5)\{
+            Lav.\hyperlink{class_lavadora_a82bd403e688482030fcb95f0c3fd62d1}{lavado}();
+        \}
+        \textcolor{keywordflow}{if} (x == -6)\{
+            Cubet.\hyperlink{class_cubeta_a3448e45131b077516b3f12fe027642dd}{escribir\_cubeta}();
+        \}
+        \textcolor{keywordflow}{if} (x==-7)\{
+            Lav.\hyperlink{class_lavadora_a0794c20f7dbd5bbb545711ef8aec9978}{escribir\_lavadora}();
+        \}
+        x=readint();
+    \}
+    cout << \textcolor{stringliteral}{"fin"} << endl;
+
+\}
+\end{DoxyCode}
